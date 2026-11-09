@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a1a2e" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="description" content="Home Inventory - Keep track of everything in your home" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="icon-192.png" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <title>Home Inventory</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header id="header" class="header">
+      <button id="back-btn" class="icon-btn hidden" aria-label="Back">←</button>
+      <h1 id="page-title">Home Inventory</h1>
+      <div class="header-spacer"></div>
+    </header>
+
+    <main id="main" class="main">
+      <!-- Screens will be injected here -->
+    </main>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <p id="modal-message"></p>
+      <div class="modal-actions">
+        <button id="modal-cancel" class="btn secondary">Cancel</button>
+        <button id="modal-confirm" class="btn danger">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="db.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
